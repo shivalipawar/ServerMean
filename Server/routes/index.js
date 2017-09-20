@@ -3,12 +3,13 @@ var router = express.Router();
 
 var auth = require('./auth.js');
 var status = require('./status.js');
+var register = require('./register.js');
 
 /*
  * Routes that can be accessed by any one
  */
 router.post('/login', auth.login);
-
+router.post('/register',register.signup);
 /*
  * Routes that can be accessed only by autheticated users
  */

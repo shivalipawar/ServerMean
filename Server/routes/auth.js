@@ -46,6 +46,7 @@ var auth = {
             return dbUserObj;
         },
     }
+    
     // private method
 function genToken(user) {
     var expires = expiresIn(7); // 7 days
